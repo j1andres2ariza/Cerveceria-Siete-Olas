@@ -1,0 +1,102 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Siete Olas Cervecería — Caribbean premium brewery design system */
+
+@theme inline {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-ocean: var(--ocean);
+  --color-amber: var(--amber);
+  --color-sunset: var(--sunset);
+  --color-foam: var(--foam);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* Deep Caribbean night + amber beer palette */
+  --background: oklch(0.16 0.03 220);          /* deep ocean night */
+  --foreground: oklch(0.96 0.02 85);           /* warm foam white */
+  --card: oklch(0.20 0.035 220);
+  --card-foreground: oklch(0.96 0.02 85);
+  --primary: oklch(0.78 0.15 75);              /* amber gold */
+  --primary-foreground: oklch(0.16 0.03 220);
+  --secondary: oklch(0.45 0.09 200);           /* teal */
+  --secondary-foreground: oklch(0.96 0.02 85);
+  --muted: oklch(0.24 0.03 220);
+  --muted-foreground: oklch(0.72 0.02 85);
+  --accent: oklch(0.68 0.19 45);               /* sunset orange */
+  --accent-foreground: oklch(0.16 0.03 220);
+  --border: oklch(0.32 0.03 220 / 0.6);
+  --ring: oklch(0.78 0.15 75);
+
+  --ocean: oklch(0.38 0.09 210);
+  --amber: oklch(0.78 0.15 75);
+  --sunset: oklch(0.68 0.19 45);
+  --foam: oklch(0.96 0.02 85);
+
+  --gradient-hero: linear-gradient(180deg, oklch(0.10 0.02 220 / 0.4) 0%, oklch(0.10 0.02 220 / 0.85) 60%, oklch(0.14 0.03 220) 100%);
+  --gradient-amber: linear-gradient(135deg, oklch(0.82 0.15 80), oklch(0.68 0.19 45));
+  --gradient-ocean: linear-gradient(135deg, oklch(0.30 0.08 215), oklch(0.16 0.03 220));
+
+  --shadow-glow: 0 0 60px -10px oklch(0.78 0.15 75 / 0.5);
+  --shadow-card: 0 20px 60px -20px oklch(0 0 0 / 0.6);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility text-gradient-amber {
+  background-image: var(--gradient-amber);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-hero-overlay {
+  background-image: var(--gradient-hero);
+}
+
+@utility shadow-glow {
+  box-shadow: var(--shadow-glow);
+}
