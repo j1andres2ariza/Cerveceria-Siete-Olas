@@ -1,4 +1,4 @@
-//#region node_modules/hookable/dist/index.mjs
+// node_modules/hookable/dist/index.mjs
 function callHooks(hooks, args, startIndex, task) {
 	for (let i = startIndex; i < hooks.length; i += 1) try {
 		const result = task ? task.run(() => hooks[i](...args)) : hooks[i](...args);
@@ -37,5 +37,4 @@ var HookableCore = class {
 		return callHooks(hooks, args, 0);
 	}
 };
-//#endregion
 export { HookableCore as t };

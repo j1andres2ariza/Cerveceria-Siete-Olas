@@ -1,14 +1,12 @@
-//#region node_modules/h3/node_modules/rou3/dist/index.mjs
+// node_modules/h3/node_modules/rou3/dist/index.mjs
 var NullProtoObj = /* @__PURE__ */ (() => {
 	const e = function() {};
 	return e.prototype = Object.create(null), Object.freeze(e.prototype), e;
 })();
-//#endregion
-//#region node_modules/srvx/dist/adapters/cloudflare.mjs
+// node_modules/srvx/dist/adapters/cloudflare.mjs
 var FastURL = URL;
 var FastResponse = Response;
-//#endregion
-//#region node_modules/h3/dist/h3.mjs
+// node_modules/h3/dist/h3.mjs
 function decodePathname(pathname) {
 	return decodeURI(pathname.includes("%25") ? pathname.replace(/%25/g, "%2525") : pathname);
 }
@@ -425,5 +423,4 @@ var H3Core = class {
 	}
 };
 /%(?:25)*(?:2f|5c)/i.source;
-//#endregion
-export { FastResponse as a, toRequest as i, HTTPError as n, FastURL as o, defineLazyEventHandler as r, H3Core as t };
+export { FastResponse as a, toRequest as i, HTTPError as n, defineLazyEventHandler as r, H3Core as t };

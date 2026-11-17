@@ -1,7 +1,7 @@
 globalThis.__nitro_main__ = import.meta.url;
-import { a as FastResponse, n as HTTPError, r as defineLazyEventHandler, t as H3Core } from "./_libs/h3+rou3+srvx.mjs";
 import { t as HookableCore } from "./_libs/hookable.mjs";
-//#region #nitro-vite-setup
+import { a as FastResponse, n as HTTPError, r as defineLazyEventHandler, t as H3Core } from "./_libs/h3+rou3+srvx.mjs";
+// #nitro-vite-setup
 function lazyService(loader) {
 	let promise, mod;
 	return { fetch(req) {
@@ -12,22 +12,14 @@ function lazyService(loader) {
 }
 var services = { ["ssr"]: lazyService(() => import("./_ssr/ssr.mjs")) };
 globalThis.__nitro_vite_envs__ = services;
-//#endregion
-//#region #nitro/virtual/public-assets-data
+// #nitro/virtual/public-assets-data
 var public_assets_data_default = {
-	"/favicon.ico": {
-		"type": "image/vnd.microsoft.icon",
-		"etag": "\"4f95-3RXc3p2mhEAs1WBwaIvE0Y0uu0Y\"",
-		"mtime": "2026-07-17T15:59:35.212Z",
-		"size": 20373,
-		"path": "../public/favicon.ico"
-	},
-	"/assets/ambience-RW0J7wMl.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"258d4-8QiXouA22z1hYyGQtGlHaqM5Hlg\"",
-		"mtime": "2026-07-21T20:59:33.760Z",
-		"size": 153812,
-		"path": "../public/assets/ambience-RW0J7wMl.jpg"
+	"/robots.txt": {
+		"type": "text/plain; charset=utf-8",
+		"etag": "\"17-ZZkCVrbr4BSdjt/K43J0tq8+Qq4\"",
+		"mtime": "2026-07-17T15:59:42.526Z",
+		"size": 23,
+		"path": "../public/robots.txt"
 	},
 	"/menu-siete-olas.pdf": {
 		"type": "application/pdf",
@@ -36,127 +28,159 @@ var public_assets_data_default = {
 		"size": 1640,
 		"path": "../public/menu-siete-olas.pdf"
 	},
-	"/robots.txt": {
-		"type": "text/plain; charset=utf-8",
-		"etag": "\"17-ZZkCVrbr4BSdjt/K43J0tq8+Qq4\"",
-		"mtime": "2026-07-17T15:59:42.526Z",
-		"size": 23,
-		"path": "../public/robots.txt"
+	"/favicon.ico": {
+		"type": "image/vnd.microsoft.icon",
+		"etag": "\"ee46-/eIJdtA954ZtcnojjeVjEI8Av5k\"",
+		"mtime": "2026-07-27T15:20:43.185Z",
+		"size": 60998,
+		"path": "../public/favicon.ico"
 	},
-	"/assets/food-burger-Ba0JR0cI.jpg": {
+	"/assets/ambience-RW0J7wMl.jpg": {
 		"type": "image/jpeg",
-		"etag": "\"20a8b-zFZrFROaUJ6UsxOM14Q1Tg2Dp4g\"",
-		"mtime": "2026-07-21T20:59:33.761Z",
-		"size": 133771,
-		"path": "../public/assets/food-burger-Ba0JR0cI.jpg"
-	},
-	"/assets/food-picada-BBFHNZC6.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"2b881-3zJP7x1WGee0HiFUYo329W2eWZA\"",
-		"mtime": "2026-07-21T20:59:33.761Z",
-		"size": 178305,
-		"path": "../public/assets/food-picada-BBFHNZC6.jpg"
+		"etag": "\"258d4-8QiXouA22z1hYyGQtGlHaqM5Hlg\"",
+		"mtime": "2026-11-17T15:40:42.580Z",
+		"size": 153812,
+		"path": "../public/assets/ambience-RW0J7wMl.jpg"
 	},
 	"/assets/Arrecife-CCPk3b1u.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"552d9-uhX3TqqM0dT+hIVJy9jfXJ9FpJk\"",
-		"mtime": "2026-07-21T20:59:33.758Z",
+		"mtime": "2026-11-17T15:40:42.573Z",
 		"size": 348889,
 		"path": "../public/assets/Arrecife-CCPk3b1u.jpg"
+	},
+	"/assets/index-YlugDf4e.js": {
+		"type": "text/javascript; charset=utf-8",
+		"etag": "\"53109-DKMPNBAS2ei1FYy/Ju+wEABwFsY\"",
+		"mtime": "2026-11-17T15:40:42.573Z",
+		"size": 340233,
+		"path": "../public/assets/index-YlugDf4e.js"
 	},
 	"/assets/Golden-sNkSWZ1X.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"5580e-tBl+FHg+YPEpEO/Y9VE0QvrvlBk\"",
-		"mtime": "2026-07-21T20:59:33.758Z",
+		"mtime": "2026-11-17T15:40:42.573Z",
 		"size": 350222,
 		"path": "../public/assets/Golden-sNkSWZ1X.jpg"
-	},
-	"/assets/index-DaRYVcPX.js": {
-		"type": "text/javascript; charset=utf-8",
-		"etag": "\"540fc-CPoIwR8pPA8pYdRmbrIU7n2ZlhM\"",
-		"mtime": "2026-07-21T20:59:33.756Z",
-		"size": 344316,
-		"path": "../public/assets/index-DaRYVcPX.js"
 	},
 	"/assets/Ipa Indian-BhtaQMDh.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"59c67-yGcl6eQBKE9QiSYtNjjki3iFS/M\"",
-		"mtime": "2026-07-21T20:59:33.759Z",
+		"mtime": "2026-11-17T15:40:42.578Z",
 		"size": 367719,
 		"path": "../public/assets/Ipa Indian-BhtaQMDh.jpg"
 	},
 	"/assets/Irish-Dq0uUJtS.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"4eb4a-4/HqX5GZiEqSocEC4BTGpU01tho\"",
-		"mtime": "2026-07-21T20:59:33.759Z",
+		"mtime": "2026-11-17T15:40:42.578Z",
 		"size": 322378,
 		"path": "../public/assets/Irish-Dq0uUJtS.jpg"
-	},
-	"/assets/routes-DC7LLOcL.js": {
-		"type": "text/javascript; charset=utf-8",
-		"etag": "\"8575-TLcXLcC/k1OAWQEgfy5DfcA2aBQ\"",
-		"mtime": "2026-07-21T20:59:33.757Z",
-		"size": 34165,
-		"path": "../public/assets/routes-DC7LLOcL.js"
-	},
-	"/assets/Pale Ale-CoaC9atH.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"46cdd-NIZRiG2ZkO0+I1+PJR/jpmMQ850\"",
-		"mtime": "2026-07-21T20:59:33.760Z",
-		"size": 290013,
-		"path": "../public/assets/Pale Ale-CoaC9atH.jpg"
-	},
-	"/assets/waves-texture-CTffqUqT.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"117d2-52JdqSt2rtAVPjReQRo0XqPqfhA\"",
-		"mtime": "2026-07-21T20:59:33.761Z",
-		"size": 71634,
-		"path": "../public/assets/waves-texture-CTffqUqT.jpg"
-	},
-	"/assets/styles-CKXlYukk.css": {
-		"type": "text/css; charset=utf-8",
-		"etag": "\"148b0-2cKM5/SIFGUea57Br/sdrW/Y0nA\"",
-		"mtime": "2026-07-21T20:59:33.761Z",
-		"size": 84144,
-		"path": "../public/assets/styles-CKXlYukk.css"
-	},
-	"/assets/Porter-IMBY1xA6.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"5063a-FicEhIHgFyB1afZpCnDI6nAjltI\"",
-		"mtime": "2026-07-21T20:59:33.760Z",
-		"size": 329274,
-		"path": "../public/assets/Porter-IMBY1xA6.jpg"
 	},
 	"/assets/Kolsh-DkjBpMSx.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"5aa6e-LC3QJipndpyx1GMU9tKDapE+Txc\"",
-		"mtime": "2026-07-21T20:59:33.760Z",
+		"mtime": "2026-11-17T15:40:42.579Z",
 		"size": 371310,
 		"path": "../public/assets/Kolsh-DkjBpMSx.jpg"
+	},
+	"/assets/routes-CuMi4gLt.js": {
+		"type": "text/javascript; charset=utf-8",
+		"etag": "\"8953-0IuXbc6C5SYDFfI6r1ot7TAleok\"",
+		"mtime": "2026-11-17T15:40:42.573Z",
+		"size": 35155,
+		"path": "../public/assets/routes-CuMi4gLt.js"
+	},
+	"/assets/Porter-IMBY1xA6.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"5063a-FicEhIHgFyB1afZpCnDI6nAjltI\"",
+		"mtime": "2026-11-17T15:40:42.580Z",
+		"size": 329274,
+		"path": "../public/assets/Porter-IMBY1xA6.jpg"
+	},
+	"/assets/Pale Ale-CoaC9atH.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"46cdd-NIZRiG2ZkO0+I1+PJR/jpmMQ850\"",
+		"mtime": "2026-11-17T15:40:42.579Z",
+		"size": 290013,
+		"path": "../public/assets/Pale Ale-CoaC9atH.jpg"
 	},
 	"/assets/Cervezas-C7XbvQAv.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"9644a-OF4Z0sNKajP8cFqJRIJDzLz/sZE\"",
-		"mtime": "2026-07-21T20:59:33.758Z",
+		"mtime": "2026-11-17T15:40:42.573Z",
 		"size": 615498,
 		"path": "../public/assets/Cervezas-C7XbvQAv.jpg"
+	},
+	"/assets/styles-DbeJ5Iy7.css": {
+		"type": "text/css; charset=utf-8",
+		"etag": "\"148e5-rg+UaW6AsslQuT0hm+Ywfk3rcfI\"",
+		"mtime": "2026-11-17T15:40:42.586Z",
+		"size": 84197,
+		"path": "../public/assets/styles-DbeJ5Iy7.css"
+	},
+	"/assets/waves-texture-CTffqUqT.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"117d2-52JdqSt2rtAVPjReQRo0XqPqfhA\"",
+		"mtime": "2026-11-17T15:40:42.587Z",
+		"size": 71634,
+		"path": "../public/assets/waves-texture-CTffqUqT.jpg"
+	},
+	"/assets/burger-DA0kyklo.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"107180-NKDPlL8Hff2HkA5ND+GhILl0v2c\"",
+		"mtime": "2026-11-17T15:40:42.580Z",
+		"size": 1077632,
+		"path": "../public/assets/burger-DA0kyklo.jpg"
+	},
+	"/assets/arroz-BSp7ZbBE.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"114b30-HS2vyPTUlD2+sP14GzlCIBP/7Kg\"",
+		"mtime": "2026-11-17T15:40:42.580Z",
+		"size": 1133360,
+		"path": "../public/assets/arroz-BSp7ZbBE.jpg"
+	},
+	"/assets/camarones-CczbItg6.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"1ac92d-EtqQCyUzFz0iMywzuprlIwqcf2Y\"",
+		"mtime": "2026-11-17T15:40:42.580Z",
+		"size": 1755437,
+		"path": "../public/assets/camarones-CczbItg6.jpg"
+	},
+	"/assets/logo-C6XGXCbe.png": {
+		"type": "image/png",
+		"etag": "\"1db859-ETxUkaA4eAF+xJq1CYC8AJqTwII\"",
+		"mtime": "2026-11-17T15:40:42.583Z",
+		"size": 1947737,
+		"path": "../public/assets/logo-C6XGXCbe.png"
+	},
+	"/assets/carnevip-_-fYlAFZ.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"1b0270-1xi5ucseUA+vN+bzkUEijfGDfsM\"",
+		"mtime": "2026-11-17T15:40:42.580Z",
+		"size": 1770096,
+		"path": "../public/assets/carnevip-_-fYlAFZ.jpg"
+	},
+	"/assets/menu-8UL6FNTJ.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"2c6fa8-O5w11km1Yu08yGxAsZqT1rC3YJI\"",
+		"mtime": "2026-11-17T15:40:42.586Z",
+		"size": 2912168,
+		"path": "../public/assets/menu-8UL6FNTJ.jpg"
 	}
 };
-//#endregion
-//#region #nitro/virtual/public-assets
+// #nitro/virtual/public-assets
 var publicAssetBases = {};
 function isPublicAssetURL(id = "") {
 	if (public_assets_data_default[id]) return true;
 	for (const base in publicAssetBases) if (id.startsWith(base)) return true;
 	return false;
 }
-//#endregion
-//#region node_modules/nitro/dist/runtime/internal/route-rules.mjs
+// node_modules/nitro/dist/runtime/internal/route-rules.mjs
 var headers = ((m) => function headersRouteRule(event) {
 	for (const [key, value] of Object.entries(m.options || {})) event.res.headers.set(key, value);
 });
-//#endregion
-//#region #nitro/virtual/routing
+// #nitro/virtual/routing
 var findRouteRules = /* @__PURE__ */ (() => {
 	const $0 = [{
 		name: "headers",
@@ -177,11 +201,11 @@ var findRouteRules = /* @__PURE__ */ (() => {
 		return r;
 	};
 })();
-var _lazy_p7Aqkf = defineLazyEventHandler(() => import("./_chunks/ssr-renderer.mjs"));
+var _lazy_h0n_DA = defineLazyEventHandler(() => import("./_chunks/ssr-renderer.mjs"));
 var findRoute = /* @__PURE__ */ (() => {
 	const data = {
 		route: "/**",
-		handler: _lazy_p7Aqkf
+		handler: _lazy_h0n_DA
 	};
 	return ((_m, p) => {
 		return {
@@ -191,8 +215,7 @@ var findRoute = /* @__PURE__ */ (() => {
 	});
 })();
 [].filter(Boolean);
-//#endregion
-//#region node_modules/nitro/dist/runtime/internal/error/prod.mjs
+// node_modules/nitro/dist/runtime/internal/error/prod.mjs
 var errorHandler = (error, event) => {
 	const res = defaultHandler(error, event);
 	return new FastResponse(typeof res.body === "string" ? res.body : JSON.stringify(res.body, null, 2), res);
@@ -227,8 +250,7 @@ function defaultHandler(error, event) {
 		}
 	};
 }
-//#endregion
-//#region #nitro/virtual/error-handler
+// #nitro/virtual/error-handler
 var errorHandlers = [errorHandler];
 async function error_handler_default(error, event) {
 	for (const handler of errorHandlers) try {
@@ -238,8 +260,7 @@ async function error_handler_default(error, event) {
 		console.error(error);
 	}
 }
-//#endregion
-//#region #nitro/virtual/app
+// #nitro/virtual/app
 function createNitroApp() {
 	const captureError = (error, errorCtx) => {
 		if (errorCtx?.event) {
@@ -280,8 +301,7 @@ function createH3App(config) {
 	};
 	return h3App;
 }
-//#endregion
-//#region node_modules/nitro/dist/runtime/internal/app.mjs
+// node_modules/nitro/dist/runtime/internal/app.mjs
 var APP_ID = "default";
 function useNitroApp() {
 	let instance = useNitroApp._instance;
@@ -334,8 +354,7 @@ function getRouteRules(method, pathname) {
 		routeRuleMiddleware: middleware
 	};
 }
-//#endregion
-//#region node_modules/nitro/dist/presets/cloudflare/runtime/_module-handler.mjs
+// node_modules/nitro/dist/presets/cloudflare/runtime/_module-handler.mjs
 function createHandler(hooks) {
 	const nitroApp = useNitroApp();
 	const nitroHooks = useNitroHooks();
@@ -408,10 +427,8 @@ function augmentReq(cfReq, ctx) {
 	};
 	req.waitUntil = ctx.context?.waitUntil.bind(ctx.context);
 }
-//#endregion
-//#region node_modules/nitro/dist/presets/cloudflare/runtime/cloudflare-module.mjs
+// node_modules/nitro/dist/presets/cloudflare/runtime/cloudflare-module.mjs
 var cloudflare_module_default = createHandler({ fetch(cfRequest, env, context, url) {
 	if (env.ASSETS && isPublicAssetURL(url.pathname)) return env.ASSETS.fetch(cfRequest);
 } });
-//#endregion
 export { cloudflare_module_default as default };

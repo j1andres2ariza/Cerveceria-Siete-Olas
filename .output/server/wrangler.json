@@ -1,11 +1,11 @@
 {
-  "compatibility_date": "2026-07-18",
+  "compatibility_date": "2026-11-14",
   "main": "index.mjs",
   "assets": {
     "binding": "ASSETS",
     "directory": "..\\public"
   },
-  "name": "tanstack-start-ts-onedrive-documents-proyectos-cervecer-a-siete-olas",
+  "name": "j1andres2ariza-cerveceria-siete-olas",
   "compatibility_flags": [
     "nodejs_compat"
   ],

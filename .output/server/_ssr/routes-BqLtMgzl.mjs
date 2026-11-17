@@ -1,6 +1,6 @@
 import { n as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-BsyaKuKa.js
+// node_modules/.nitro/vite/services/ssr/assets/routes-BqLtMgzl.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var Cervezas_default = "/assets/Cervezas-C7XbvQAv.jpg";
@@ -11,28 +11,32 @@ var Porter_default = "/assets/Porter-IMBY1xA6.jpg";
 var Pale_Ale_default = "/assets/Pale%20Ale-CoaC9atH.jpg";
 var Arrecife_default = "/assets/Arrecife-CCPk3b1u.jpg";
 var Golden_default = "/assets/Golden-sNkSWZ1X.jpg";
-var food_burger_default = "/assets/food-burger-Ba0JR0cI.jpg";
-var food_picada_default = "/assets/food-picada-BBFHNZC6.jpg";
 var ambience_default = "/assets/ambience-RW0J7wMl.jpg";
 var waves_texture_default = "/assets/waves-texture-CTffqUqT.jpg";
+var logo_default = "/assets/logo-C6XGXCbe.png";
+var menu_default = "/assets/menu-8UL6FNTJ.jpg";
+var burger_default = "/assets/burger-DA0kyklo.jpg";
+var carnevip_default = "/assets/carnevip-_-fYlAFZ.jpg";
+var camarones_default = "/assets/camarones-CczbItg6.jpg";
+var arroz_default = "/assets/arroz-BSp7ZbBE.jpg";
 var WHATSAPP_NUMBER = "573235981754";
 var beers = [
 	{
-		name: "IPA Indian",
+		name: "Cinto",
 		style: "PALE ALE",
 		abv: "4.3%",
 		notes: "Suave, floral y refrescante como la brisa de El Rodadero.",
 		image: Ipa_Indian_default
 	},
 	{
-		name: "Irish",
+		name: "Gayraca",
 		style: "Red Ale",
 		abv: "5.0%",
 		notes: "Maltas tostadas, caramelo suave y un cierre seco.",
 		image: Irish_default
 	},
 	{
-		name: "Kölsh",
+		name: "Neguaje",
 		style: "Con Maracuyá",
 		abv: "4.0%",
 		ibu: "25",
@@ -40,21 +44,21 @@ var beers = [
 		image: Kolsh_default
 	},
 	{
-		name: "Porter",
+		name: "Granate",
 		style: "Café",
 		abv: "6.0%",
 		notes: "Café, cacao y notas de panela sobre un cuerpo sedoso.",
 		image: Porter_default
 	},
 	{
-		name: "Pale Ale",
-		style: "Sabor Lulo",
+		name: "Chengue",
+		style: "Lulo",
 		abv: "5.0%",
 		notes: "Plátano y clavo, turbia y refrescante en cada sorbo.",
 		image: Pale_Ale_default
 	},
 	{
-		name: "Golden",
+		name: "Inca Inca",
 		style: "Miel",
 		abv: "4.3%",
 		notes: "Nuestra rotativa. Cada mes, una nueva ola por descubrir.",
@@ -118,12 +122,20 @@ function Nav({ onReserve }) {
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 					href: "#top",
 					className: "flex items-center gap-2 group",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(WavesLogo, { className: "h-7 w-7 text-primary" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+						src: logo_default,
+						alt: "CerveceríaSiete Olas",
+						className: "h-10 w-auto"
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 						className: "font-display text-lg font-semibold tracking-tight",
-						children: ["Siete ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "text-primary",
-							children: "Olas"
-						})]
+						children: [
+							"Cervecería ",
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "text-primary",
+								children: "Siete "
+							}),
+							"Olas"
+						]
 					})]
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
@@ -206,7 +218,7 @@ function Hero({ onReserve }) {
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "mt-8 text-lg md:text-xl text-foreground/80 max-w-xl leading-relaxed",
-							children: "Siete estilos de ola. Seis cervezas artesanales hechas en casa, cocina caribeña con carácter y un ambiente donde cada visita se vuelve historia."
+							children: "Siete olas, seis cervezas artesanales propias y el auténtico sabor del Caribe en cada plato. Aquí no vienes solo a comer: vienes a crear historias."
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "mt-10 flex flex-wrap gap-4",
@@ -304,13 +316,13 @@ function Beers() {
 						"Seis cervezas.",
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "italic font-normal",
-							children: "Una por cada ola."
+							className: "italic font-normal text-sm=14px",
+							children: "La esencia más pura del sabor caribeño."
 						})
 					]
 				})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "text-muted-foreground max-w-sm",
-					children: "Elaboradas en pequeños lotes en nuestra sala de cocción. Sin filtros, sin atajos, con la frescura del Caribe."
+					children: "Pequeños lotes, gran carácter. Cerveza artesanal recién salida de nuestra sala de cocción, sin filtros ni atajos. Caribe en estado puro."
 				})]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10",
@@ -377,7 +389,7 @@ function Gastronomy() {
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
 						className: "font-display text-4xl md:text-6xl font-bold leading-[1.05]",
 						children: [
-							"Maridar es",
+							"Siete Olas",
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 								className: "italic font-normal",
@@ -387,22 +399,37 @@ function Gastronomy() {
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "mt-6 text-lg text-muted-foreground",
-						children: "Cada plato está pensado para resaltar el carácter de nuestras cervezas. Hamburguesas de autor, picadas para compartir y alitas con toque caribeño."
+						children: "Cada plato nace para potenciar el carácter de nuestras cervezas. Hamburguesas de autor, picadas para compartir y alitas con el auténtico sello del Caribe."
 					})
 				]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "grid md:grid-cols-2 gap-6",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FoodCard, {
-					image: food_burger_default,
-					title: "Hamburguesas de autor",
-					desc: "Carne fresca, brioche artesanal, quesos fundidos y toque de casa. El clásico que no falla.",
-					tag: "Signature"
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FoodCard, {
-					image: food_picada_default,
-					title: "Picadas & Alitas",
-					desc: "Tablas generosas para compartir: alitas glaseadas, chorizo, yuca crocante y nachos con guacamole.",
-					tag: "Para compartir"
-				})]
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FoodCard, {
+						image: burger_default,
+						title: "Hamburguesas",
+						desc: "Carne fresca, brioche artesanal, quesos fundidos y toque de casa. El clásico que no falla.",
+						tag: "Personal"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FoodCard, {
+						image: carnevip_default,
+						title: "Carnes",
+						desc: "Entraña de res, sazonada con especias locales y servida con nuestra salsa especial.",
+						tag: "Personal"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FoodCard, {
+						image: camarones_default,
+						title: "Ceviches",
+						desc: "Camarones de la costa, aliñados con limón, ají y cebolla roja. Un clásico del Caribe.",
+						tag: "Peersonal"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FoodCard, {
+						image: menu_default,
+						title: "Picadas para compartir",
+						desc: "Una selección de cortes de carne, pollo y embutidos para disfrutar en compañía.",
+						tag: "Para compartir"
+					})
+				]
 			})]
 		})
 	});
@@ -462,117 +489,168 @@ function Menu() {
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "mt-6 text-lg text-muted-foreground leading-relaxed",
-					children: "Descarga o consulta nuestro menú completo en PDF: cervezas artesanales, hamburguesas de autor, picadas para compartir y más."
+					children: "Descarga o consulta nuestro menú completo en PDF: cervezas artesanales, hamburguesas, picadas para compartir y más."
 				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 					className: "mt-8 flex flex-wrap gap-3",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: "/menu-siete-olas.pdf",
-						target: "_blank",
-						rel: "noreferrer",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						href: "https://menu.pirpos.com/menu/699f817611792336c05a9a21",
 						className: "inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:shadow-glow transition",
-						children: "Ver menú (PDF) →"
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: "/menu-siete-olas.pdf",
-						download: true,
-						className: "inline-flex items-center gap-2 rounded-full border border-border/60 px-6 py-3 text-sm font-semibold hover:bg-foreground/5 transition",
-						children: "Descargar"
-					})]
-				})
-			] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "relative rounded-2xl border border-border/60 bg-background/60 p-10 md:p-14 text-center shadow-card",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "mx-auto h-20 w-20 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center mb-6",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-							viewBox: "0 0 24 24",
-							fill: "none",
-							stroke: "currentColor",
-							strokeWidth: "1.6",
-							className: "h-9 w-9 text-primary",
-							"aria-hidden": true,
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M14 3v5h5" }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M9 13h6M9 17h4" })
-							]
-						})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "font-display text-2xl font-semibold",
-						children: "menu-siete-olas.pdf"
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "mt-2 text-sm text-muted-foreground",
-						children: "Actualizado periódicamente · Se abre en tu navegador"
+						children: "Ver menú →"
 					})
-				]
+				})
+			] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "relative rounded-2xl border border-border/60 bg-background/60 p-10 md:p-14 text-center shadow-card",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+					src: arroz_default,
+					alt: "Menú de Cervecería Siete Olas",
+					className: "h-auto w-full rounded-xl",
+					loading: "lazy"
+				})
 			})]
 		})
 	});
 }
 function Experiences() {
+	const standIncludes = [
+		"Transporte y logística",
+		"Vasos de 14 oz",
+		"Mobiliario incluido"
+	];
+	const items = [
+		{
+			tag: "Cursos",
+			title: "Domina el arte de la cerveza artesanal",
+			desc: "Talleres prácticos donde vivirás el proceso de principio a fin: molienda, cocción, fermentación y cata. No necesitas experiencia, solo ganas de aprender.",
+			cta: "Quiero inscribirme al curso",
+			subject: "Curso de elaboración de cerveza"
+		},
+		{
+			tag: "Tour",
+			title: "Visita nuestra planta",
+			desc: "Recorre nuestra sala de cocción y bodega de fermentación en Santa Marta en un tour guiado, con cata de las seis cervezas al finalizar.",
+			cta: "Reservar visita a la planta",
+			subject: "Visita guiada a la planta"
+		},
+		{
+			tag: "Eventos",
+			title: "Nuestra cerveza en tu evento",
+			desc: "Organiza un evento con nosotros y disfruta de nuestra selección de cervezas artesanales y del servicio de catering.",
+			cta: "Solicitar información",
+			subject: "Servicio de catering para eventos"
+		},
+		{
+			tag: "Stand 01",
+			title: "Stand con una persona",
+			desc: "Llevamos nuestra cerveza artesanal de barril y una persona para atender el stand en tu evento.",
+			includes: [
+				"1 persona para atender el stand",
+				"2 barriles de cerveza",
+				...standIncludes
+			],
+			price: "$2.000.000",
+			cta: "Cotizar este stand",
+			subject: "Stand 01 con una persona"
+		},
+		{
+			tag: "Stand 02",
+			title: "Stand de autoservicio",
+			desc: "Tus invitados pueden servirse nuestra cerveza artesanal de barril durante el evento.",
+			includes: ["2 barriles de cerveza", ...standIncludes],
+			price: "$2.200.000",
+			cta: "Cotizar este stand",
+			subject: "Stand 02 de autoservicio"
+		},
+		{
+			tag: "Stand 03",
+			title: "Barra Siete Olas",
+			desc: "Una barra de cerveza artesanal de barril con dos personas para atender a tus invitados.",
+			includes: [
+				"2 personas para atender la barra",
+				"3 barriles de cerveza",
+				...standIncludes
+			],
+			price: "$3.500.000",
+			cta: "Cotizar esta barra",
+			subject: "Stand 03 Barra Siete Olas"
+		}
+	];
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 		id: "experiencias",
 		className: "py-24 md:py-32",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "mx-auto max-w-7xl px-6",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "max-w-2xl mb-14",
+				className: "mb-14 max-w-2xl",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "text-xs uppercase tracking-[0.3em] text-primary mb-4",
+					className: "mb-4 text-xs uppercase tracking-[0.3em] text-primary",
 					children: "Experiencias"
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
-					className: "font-display text-4xl md:text-5xl font-bold leading-[1.05]",
+					className: "font-display text-4xl font-bold leading-[1.05] md:text-5xl",
 					children: [
 						"Vive la cerveza",
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "italic font-normal text-muted-foreground",
+							className: "font-normal italic text-muted-foreground",
 							children: "desde adentro."
 						})
 					]
 				})]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "grid md:grid-cols-2 gap-6",
-				children: [{
-					tag: "Cursos",
-					title: "Aprende a hacer cerveza",
-					desc: "Talleres prácticos donde vivirás el proceso completo: molienda, cocción, fermentación y cata. Ideal para principiantes y entusiastas.",
-					cta: "Quiero inscribirme al curso",
-					subject: "Curso de elaboración de cerveza"
-				}, {
-					tag: "Tour",
-					title: "Visita nuestra planta",
-					desc: "Un recorrido guiado por nuestra sala de cocción y bodega de fermentación en Santa Marta, con degustación de las 6 cervezas al final.",
-					cta: "Reservar visita a la planta",
-					subject: "Visita guiada a la planta"
-				}].map((it) => {
-					const msg = encodeURIComponent(`Hola Siete Olas, estoy interesado(a) en: ${it.subject}. ¿Me pueden dar más información?`);
+				className: "grid gap-6 md:grid-cols-2 lg:grid-cols-3",
+				children: items.map((item) => {
+					const message = encodeURIComponent(`Hola Siete Olas, me interesa ${item.subject}. ¿Me pueden dar más información y confirmar disponibilidad?`);
 					return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-						className: "group rounded-2xl border border-border/60 bg-card p-8 md:p-10 flex flex-col hover:border-primary/50 transition",
+						className: "flex flex-col rounded-2xl border border-primary/30 bg-card p-8 transition-colors hover:border-primary/70",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "inline-block self-start text-[10px] uppercase tracking-[0.25em] text-primary mb-4 border border-primary/40 rounded-full px-3 py-1",
-								children: it.tag
+								className: "mb-4 self-start rounded-full border border-primary/40 px-3 py-1 text-[10px] uppercase tracking-[0.25em] text-primary",
+								children: item.tag
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-								className: "font-display text-2xl md:text-3xl font-bold",
-								children: it.title
+								className: "font-display text-2xl font-bold md:text-3xl",
+								children: item.title
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "mt-4 text-muted-foreground leading-relaxed flex-1",
-								children: it.desc
+								className: "mt-4 leading-relaxed text-muted-foreground",
+								children: item.desc
 							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-								href: `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`,
-								target: "_blank",
-								rel: "noreferrer",
-								className: "mt-6 inline-flex items-center gap-2 self-start rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:shadow-glow transition",
-								children: [it.cta, " →"]
+							item.includes && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+								className: "mt-5 list-disc space-y-2 pl-5 text-sm text-muted-foreground",
+								children: item.includes.map((detail) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: detail }, detail))
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "mt-3 text-xs text-muted-foreground",
+								children: "Rendimiento por barril: 70 vasos de 14 oz."
+							})] }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "mt-auto pt-6",
+								children: [item.price && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+									className: "mb-4 font-display text-2xl font-bold text-primary",
+									children: [
+										item.price,
+										" ",
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-sm font-normal",
+											children: "COP"
+										})
+									]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+									href: `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`,
+									target: "_blank",
+									rel: "noopener noreferrer",
+									className: "inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:shadow-glow",
+									children: [
+										item.cta,
+										" ",
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											"aria-hidden": "true",
+											children: "→"
+										})
+									]
+								})]
 							})
 						]
-					}, it.title);
+					}, item.subject);
 				})
 			})]
 		})
@@ -607,7 +685,7 @@ function Franchise() {
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "mt-8 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed",
-					children: "Trabajamos con emprendedores, restaurantes y marcas que buscan una franquicia Siete Olas o desarrollar su propia cerveza artesanal con nuestro respaldo técnico. Cuéntanos tu proyecto y te acompañamos en cada paso."
+					children: "Impulsamos tu proyecto cervecero. Aliados estratégicos para emprendedores, restaurantes y marcas que desean operar una franquicia Siete Olas o crear su propia cerveza artesanal con todo nuestro respaldo técnico. Cuéntanos tu idea y construyamos el siguiente paso juntos."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "mt-10 flex flex-wrap justify-center gap-3",
@@ -618,7 +696,7 @@ function Franchise() {
 						className: "inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground hover:shadow-glow transition",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(WhatsAppIcon, { className: "h-4 w-4" }), "Contactar por WhatsApp"]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: "mailto:sieteolasrestobar@gmail.com?subject=Interés en franquicia Siete Olas",
+						href: "mailto:cerveceriasieteolas@gmail.com?subject=Interés en franquicia Siete Olas",
 						className: "inline-flex items-center gap-2 rounded-full border border-border/60 px-7 py-3.5 text-sm font-semibold hover:bg-foreground/5 transition",
 						children: "Escribir por correo"
 					})]
@@ -631,12 +709,12 @@ function WhereToFind() {
 	const points = [
 		{
 			name: "Cervecería Siete Olas",
-			detail: "Calle 29b #8-20, Santa Marta",
+			detail: "Calle 19 #4-12, Santa Marta",
 			tag: "Punto principal"
 		},
 		{
-			name: "Próximamente",
-			detail: "Nuevos puntos de venta en Santa Marta y la región Caribe.",
+			name: "Club Siete Olas",
+			detail: "Calle 29b #8-20 Esquina, Santa Marta",
 			tag: "Placeholder"
 		},
 		{
@@ -733,7 +811,7 @@ function Ambience() {
 						"Eventos privados",
 						"Música en vivo",
 						"Grupos y celebraciones",
-						"Pet friendly"
+						"Ambiente Fresco"
 					].map((f) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
 						className: "flex items-center gap-3 text-muted-foreground",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-1.5 w-1.5 rounded-full bg-primary" }), f]
@@ -773,10 +851,7 @@ function Testimonials() {
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
 						className: "font-display text-4xl md:text-6xl font-bold leading-[1.05]",
-						children: ["5,0 sobre 5", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "text-primary",
-							children: "."
-						})]
+						children: ["5.0 sobre 5.0", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "text-primary" })]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "mt-5 text-muted-foreground",
@@ -838,7 +913,7 @@ function Visit({ onReserve }) {
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(InfoRow, {
 							label: "Dirección",
 							children: [
-								"Calle 29b #8-20, Comuna 2",
+								"Calle 19 #4-12",
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
 								"Santa Marta, Magdalena — Colombia"
 							]
@@ -854,9 +929,9 @@ function Visit({ onReserve }) {
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(InfoRow, {
 							label: "Correo",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-								href: "mailto:sieteolasrestobar@gmail.com",
+								href: "mailto:cerveceriasieteolas@gmail.com",
 								className: "hover:text-primary transition",
-								children: "sieteolasrestobar@gmail.com"
+								children: "cerveceriasieteolas@gmail.com"
 							})
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(InfoRow, {
@@ -889,7 +964,7 @@ function Visit({ onReserve }) {
 						className: "inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:shadow-glow transition",
 						children: "Reservar mesa →"
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: "https://maps.google.com/maps?daddr=Calle+29b+%238-20+Santa+Marta+Colombia",
+						href: "https://maps.google.com/maps?daddr=Calle+19+%234-12+Santa+Marta+Colombia",
 						target: "_blank",
 						rel: "noreferrer",
 						className: "inline-flex items-center gap-2 rounded-full border border-border/60 px-6 py-3 text-sm font-semibold hover:bg-foreground/5 transition",
@@ -1128,7 +1203,11 @@ function Footer() {
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "flex items-center gap-2",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(WavesLogo, { className: "h-6 w-6 text-primary" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+						src: logo_default,
+						alt: "CerveceríaSiete Olas",
+						className: "h-10 w-auto"
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 						className: "font-display font-semibold",
 						children: "Siete Olas Cervecería Artesanal"
 					})]
@@ -1161,36 +1240,6 @@ function Footer() {
 				})
 			]
 		})
-	});
-}
-function WavesLogo({ className }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-		viewBox: "0 0 40 40",
-		fill: "none",
-		className,
-		"aria-hidden": true,
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-				d: "M2 14c3 0 3-4 6-4s3 4 6 4 3-4 6-4 3 4 6 4 3-4 6-4 3 4 6 4",
-				stroke: "currentColor",
-				strokeWidth: "2",
-				strokeLinecap: "round"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-				d: "M2 22c3 0 3-4 6-4s3 4 6 4 3-4 6-4 3 4 6 4 3-4 6-4 3 4 6 4",
-				stroke: "currentColor",
-				strokeWidth: "2",
-				strokeLinecap: "round",
-				opacity: "0.6"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-				d: "M2 30c3 0 3-4 6-4s3 4 6 4 3-4 6-4 3 4 6 4 3-4 6-4 3 4 6 4",
-				stroke: "currentColor",
-				strokeWidth: "2",
-				strokeLinecap: "round",
-				opacity: "0.3"
-			})
-		]
 	});
 }
 function InstagramIcon({ className }) {
@@ -1243,5 +1292,4 @@ function WhatsAppIcon({ className }) {
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1.1 2.7.1.2 1.9 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 15 3.5 13.5 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z" })
 	});
 }
-//#endregion
 export { Home as component };
