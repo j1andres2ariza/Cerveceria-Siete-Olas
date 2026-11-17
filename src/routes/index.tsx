@@ -13,6 +13,12 @@ import foodPicada from "@/assets/food-picada.jpg";
 import ambience from "@/assets/ambience.jpg";
 import waves from "@/assets/waves-texture.jpg";
 import logo from "@/assets/logo.png";
+import menu from "@/assets/menu.jpg";
+import burger7 from "@/assets/burger.jpg"
+import carne7 from "@/assets/carnevip.jpg"
+import camarones from "@/assets/camarones.jpg"
+import carne from "@/assets/carne.jpg"
+import arroz from "@/assets/arroz.jpg"
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -25,21 +31,21 @@ const WHATSAPP_NUMBER = "573235981754";
 
 const beers = [
   {
-    name: "IPA Indian",
+    name: "Cinto",
     style: "PALE ALE",
     abv: "4.3%",
     notes: "Suave, floral y refrescante como la brisa de El Rodadero.",
     image: ipaIndian,
   },
   {
-    name: "Irish",
+    name: "Gayraca",
     style: "Red Ale",
     abv: "5.0%",
     notes: "Maltas tostadas, caramelo suave y un cierre seco.",
     image: irish,
   },
   {
-    name: "Kölsh",
+    name: "Neguaje",
     style: "Con Maracuyá",
     abv: "4.0%",
     ibu: "25",
@@ -47,21 +53,21 @@ const beers = [
     image: kolsh,
   },
   {
-    name: "Porter",
+    name: "Granate",
     style: "Café",
     abv: "6.0%",
     notes: "Café, cacao y notas de panela sobre un cuerpo sedoso.",
     image: porter,
   },
   {
-    name: "Pale Ale",
-    style: "Sabor Lulo",
+    name: "Chengue",
+    style: "Lulo",
     abv: "5.0%",
     notes: "Plátano y clavo, turbia y refrescante en cada sorbo.",
     image: paleAle,
   },
   {
-    name: "Golden",
+    name: "Inca Inca",
     style: "Miel",
     abv: "4.3%",
     notes: "Nuestra rotativa. Cada mes, una nueva ola por descubrir.",
@@ -256,7 +262,9 @@ function Beers() {
             <p className="text-xs uppercase tracking-[0.3em] text-primary mb-4">La carta</p>
             <h2 className="font-display text-4xl md:text-6xl font-bold max-w-2xl leading-[1.05]">
               Seis cervezas.<br />
-              <span className="italic font-normal">Una por cada ola.</span>
+              <span className="italic font-normal text-sm=14px">
+                La esencia más pura del sabor caribeño.
+              </span>
             </h2>
           </div>
           <p className="text-muted-foreground max-w-sm">
@@ -315,15 +323,27 @@ function Gastronomy() {
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           <FoodCard
-            image={foodBurger}
+            image={burger7}
             title="Hamburguesas"
             desc="Carne fresca, brioche artesanal, quesos fundidos y toque de casa. El clásico que no falla."
-            tag="Signature"
+            tag="Personal"
           />
           <FoodCard
-            image={foodPicada}
-            title="Picadas & Alitas"
-            desc="Tablas generosas para compartir: alitas glaseadas, chorizo, yuca crocante y nachos con guacamole."
+            image={carne7}
+            title="Carnes"
+            desc="Entraña de res, sazonada con especias locales y servida con nuestra salsa especial."
+            tag="Personal"
+          />
+          <FoodCard
+            image={camarones}
+            title="Ceviches"
+            desc="Camarones de la costa, aliñados con limón, ají y cebolla roja. Un clásico del Caribe."
+            tag="Peersonal"
+          />
+          <FoodCard
+            image={menu}
+            title="Picadas para compartir"
+            desc="Una selección de cortes de carne, pollo y embutidos para disfrutar en compañía."
             tag="Para compartir"
           />
         </div>
@@ -379,32 +399,20 @@ function Menu() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href="/menu-siete-olas.pdf"
-              target="_blank"
-              rel="noreferrer"
+              href="https://menu.pirpos.com/menu/699f817611792336c05a9a21"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:shadow-glow transition"
             >
-              Ver Menú (PDF) →
-            </a>
-            <a
-              href="/menu-siete-olas.pdf"
-              download
-              className="inline-flex items-center gap-2 rounded-full border border-border/60 px-6 py-3 text-sm font-semibold hover:bg-foreground/5 transition"
-            >
-              Descargar
+              Ver menú →
             </a>
           </div>
         </div>
         <div className="relative rounded-2xl border border-border/60 bg-background/60 p-10 md:p-14 text-center shadow-card">
-          <div className="mx-auto h-20 w-20 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center mb-6">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="h-9 w-9 text-primary" aria-hidden>
-              <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" />
-              <path d="M14 3v5h5" />
-              <path d="M9 13h6M9 17h4" />
-            </svg>
-          </div>
-          <p className="font-display text-2xl font-semibold">Menú Siete Olas</p>
-          <p className="mt-2 text-sm text-muted-foreground">Actualizado periódicamente · Se abre en tu navegador</p>
+          <img
+            src={arroz}
+            alt="Menú de Cervecería Siete Olas"
+            className="h-auto w-full rounded-xl"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
@@ -412,55 +420,140 @@ function Menu() {
 }
 
 function Experiences() {
+  const standIncludes = [
+    "Transporte y logística",
+    "Vasos de 14 oz",
+    "Mobiliario incluido",
+  ];
+
   const items = [
     {
       tag: "Cursos",
-      title: "Domina el arte de la cerveza artesanal.",
-      desc: "Talleres 100% prácticos donde vivirás el proceso de principio a fin: molienda, cocción, fermentación y cata. No necesitas experiencia, solo ganas de aprender.",
+      title: "Domina el arte de la cerveza artesanal",
+      desc: "Talleres prácticos donde vivirás el proceso de principio a fin: molienda, cocción, fermentación y cata. No necesitas experiencia, solo ganas de aprender.",
       cta: "Quiero inscribirme al curso",
       subject: "Curso de elaboración de cerveza",
     },
     {
       tag: "Tour",
       title: "Visita nuestra planta",
-      desc: "Recorre nuestra sala de cocción y bodega de fermentación en Santa Marta en un tour guiado, con cata de las 6 cervezas al finalizar.",
+      desc: "Recorre nuestra sala de cocción y bodega de fermentación en Santa Marta en un tour guiado, con cata de las seis cervezas al finalizar.",
       cta: "Reservar visita a la planta",
       subject: "Visita guiada a la planta",
     },
+    {
+      tag: "Eventos",
+      title: "Nuestra cerveza en tu evento",
+      desc: "Organiza un evento con nosotros y disfruta de nuestra selección de cervezas artesanales y del servicio de catering.",
+      cta: "Solicitar información",
+      subject: "Servicio de catering para eventos",
+    },
+    {
+      tag: "Stand 01",
+      title: "Stand con una persona",
+      desc: "Llevamos nuestra cerveza artesanal de barril y una persona para atender el stand en tu evento.",
+      includes: [
+        "1 persona para atender el stand",
+        "2 barriles de cerveza",
+        ...standIncludes,
+      ],
+      price: "$2.000.000",
+      cta: "Cotizar este stand",
+      subject: "Stand 01 con una persona",
+    },
+    {
+      tag: "Stand 02",
+      title: "Stand de autoservicio",
+      desc: "Tus invitados pueden servirse nuestra cerveza artesanal de barril durante el evento.",
+      includes: ["2 barriles de cerveza", ...standIncludes],
+      price: "$2.200.000",
+      cta: "Cotizar este stand",
+      subject: "Stand 02 de autoservicio",
+    },
+    {
+      tag: "Stand 03",
+      title: "Barra Siete Olas",
+      desc: "Una barra de cerveza artesanal de barril con dos personas para atender a tus invitados.",
+      includes: [
+        "2 personas para atender la barra",
+        "3 barriles de cerveza",
+        ...standIncludes,
+      ],
+      price: "$3.500.000",
+      cta: "Cotizar esta barra",
+      subject: "Stand 03 Barra Siete Olas",
+    },
   ];
+
   return (
     <section id="experiencias" className="py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="max-w-2xl mb-14">
-          <p className="text-xs uppercase tracking-[0.3em] text-primary mb-4">Experiencias</p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold leading-[1.05]">
-            Vive la cerveza<br />
-            <span className="italic font-normal text-muted-foreground">desde adentro.</span>
+        <div className="mb-14 max-w-2xl">
+          <p className="mb-4 text-xs uppercase tracking-[0.3em] text-primary">
+            Experiencias
+          </p>
+          <h2 className="font-display text-4xl font-bold leading-[1.05] md:text-5xl">
+            Vive la cerveza
+            <br />
+            <span className="font-normal italic text-muted-foreground">
+              desde adentro.
+            </span>
           </h2>
         </div>
-        <div className="grid md:grid-cols-2 gap-6">
-          {items.map((it) => {
-            const msg = encodeURIComponent(
-              `Hola Siete Olas, estoy interesado(a) en: ${it.subject}. ¿Me pueden dar más información?`,
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {items.map((item) => {
+            const message = encodeURIComponent(
+              `Hola Siete Olas, me interesa ${item.subject}. ¿Me pueden dar más información y confirmar disponibilidad?`,
             );
+
             return (
               <article
-                key={it.title}
-                className="group rounded-2xl border border-border/60 bg-card p-8 md:p-10 flex flex-col hover:border-primary/50 transition"
+                key={item.subject}
+                className="flex flex-col rounded-2xl border border-primary/30 bg-card p-8 transition-colors hover:border-primary/70"
               >
-                <span className="inline-block self-start text-[10px] uppercase tracking-[0.25em] text-primary mb-4 border border-primary/40 rounded-full px-3 py-1">
-                  {it.tag}
+                <span className="mb-4 self-start rounded-full border border-primary/40 px-3 py-1 text-[10px] uppercase tracking-[0.25em] text-primary">
+                  {item.tag}
                 </span>
-                <h3 className="font-display text-2xl md:text-3xl font-bold">{it.title}</h3>
-                <p className="mt-4 text-muted-foreground leading-relaxed flex-1">{it.desc}</p>
-                <a
-                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 self-start rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:shadow-glow transition"
-                >
-                  {it.cta} →
-                </a>
+
+                <h3 className="font-display text-2xl font-bold md:text-3xl">
+                  {item.title}
+                </h3>
+
+                <p className="mt-4 leading-relaxed text-muted-foreground">
+                  {item.desc}
+                </p>
+
+                {item.includes && (
+                  <>
+                    <ul className="mt-5 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
+                      {item.includes.map((detail) => (
+                        <li key={detail}>{detail}</li>
+                      ))}
+                    </ul>
+                    <p className="mt-3 text-xs text-muted-foreground">
+                      Rendimiento por barril: 70 vasos de 14 oz.
+                    </p>
+                  </>
+                )}
+
+                <div className="mt-auto pt-6">
+                  {item.price && (
+                    <p className="mb-4 font-display text-2xl font-bold text-primary">
+                      {item.price}{" "}
+                      <span className="text-sm font-normal">COP</span>
+                    </p>
+                  )}
+
+                  <a
+                    href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:shadow-glow"
+                  >
+                    {item.cta} <span aria-hidden="true">→</span>
+                  </a>
+                </div>
               </article>
             );
           })}
